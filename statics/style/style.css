@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Child'; 
+	src: url(../fonts/ofont.ru_Airfool.ttf); 
+}
+body{
+    background: #d6cdbf;
+}
+/* menu */
+.nav-containeer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    background: #5c5c5c;
+}
+.nav-spisok{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vh;
+    height: 100%;
+}
+.nav-el a{
+    list-style: none;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav-el{
+    list-style: none;
+    height: 100%;
+    border: 4px solid #5c5c5c;
+    width: 15%;
+    padding-top: 10px;
+    text-align: center;
+}
+.nav-el:hover{
+    border-bottom: 4px solid rgb(255, 218, 116);
+}
+.nav-row{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border-radius: 7px;
+    border: 2px solid antiquewhite;
+    background: antiquewhite; 
+}
+.nav-el--active{
+    border-bottom: 4px solid rgba(255, 221, 127, 0.795);
+}
+.nav-row-input{
+    width: 90%;
+    height: 3.5vh;   
+    padding-left: 10px;
+    border-radius: 7px;
+    background: #b6b6b6;
+}
+.nav-row-input:focus{
+    box-shadow: 0 0 5px 5px rgb(44, 44, 44);
+}
+.nav-button{
+    height: 3.5vh;
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: antiquewhite;
+    cursor: pointer;   
+}
+.logo{
+    border-radius: 5px;
+}
+/* main */
+.content{
+    display: none;
+}
+.content--active{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+}
+.content-box{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+.content-info{
+    padding: 10px;
+    border-radius: 15px;
+    width: 40%;
+    margin: 10px;
+    background: #6e68526e;
+    box-shadow: 0 0 5px 5px rgb(117, 117, 117);
+    text-align: center;
+}
+.content-info:hover{
+    box-shadow: 0 0 0 0;
+    transform: scale(1.01);
+}
+/* inside content-info */
+.typical-button{
+    width: 150px;
+    height: 50px;
+    border: 2px solid antiquewhite;
+    color: antiquewhite;
+    border-radius: 5px;
+    background: #7c7979b6;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background,color .5s linear .1s;
+}
+.typical-button:hover{
+    background: antiquewhite;
+    color: #7c7979b6;
+}
+.typical-button:active{
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%);
+    background: rgb(221, 205, 185);
+}
+
+/* footer */
+.footer{
+    position: fixed;
+    width: 100%;
+}
+.footer-containeer{
+    background: #5c5c5c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+.text-info{
+    color: whitesmoke;
+    margin-left: 10vh;
+    
+}
+.icons-info{
+    display: flex;
+    align-items: center;
+    margin-right: 10vh;
+    justify-content: space-between;
+    width: 10%;
+}
+.social-media{
+    cursor: pointer;
+}
+.rad-1-0-0-1{
+    border-radius: 4rem 0 0 4rem;
+}
+.rad-0-1-1-0{
+    border-radius: 0 4rem 4rem 0;
+}
+.rad-1-1-1-1{
+    border-radius: 4rem;
+}
+.carousel-caption{
+    font-weight: 100;
+    font-size: 1.1em;
+    font-family: 'Child' ;
+    color: rgb(0, 12, 184);
+}
+.special{
+    font-size: 1.2em;
+    font-family: 'Child';
+    color: whitesmoke;
+    font-weight: normal;
+    text-shadow: 1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+.spanshadow{
+    box-shadow:  1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+}
+.gif{
+    height: 20vh;
+}
+.bg-content-info{
+    background-color: #6e68526e; 
+}
+.vh34{
+    height: 34vh;
+}
+.vh36{
+    height: 36vh;
+}
+.whole-alphabet{
+    height: 74vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3vh;
+}
+.letter{
+    width: auto;
+    background-color: #fff;
+    border-radius: 10%;
+    border: solid 5px rgb(238, 226, 121) ;
+    box-shadow: 0 0 1vh 1vh rgba(226, 247, 108, 0.822);
+    margin: 3vh;
+    display: flex;
+}
+.letter:hover{
+    box-shadow: 0 0 2vh 2vh rgba(108, 247, 236, 0.822);
+    cursor: pointer;
+}
+.letter:active{
+    scale: 1.1;
+    box-shadow: 0 0 2vh 2vh rgba(110, 209, 110, 0.877);
+}
+.letter-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.RightChoice{
+    box-shadow: 0 0 2vh 2vh rgba(226, 247, 108, 0.822);
+}
+.nh{
+    height: 74vh;
+
+}
